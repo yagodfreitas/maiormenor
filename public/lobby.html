@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby - Equação Maior Menor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sala de Espera (Lobby)</h1>
+        <p>Aguardando jogadores... O jogo começa com 5 a 8 participantes.</p>
+        
+        <h2>Jogadores Conectados:</h2>
+        <ul id="lista-jogadores">
+            <!-- A lista de jogadores será preenchida pelo client.js -->
+        </ul>
+
+        <button id="btn-iniciar-jogo" style="display: none;">Iniciar Jogo</button>
+        <p id="mensagem-host" style="display: none;">Você é o host. Aguarde o número correto de jogadores para começar.</p>
+    </div>
+
+    <!-- Importa a biblioteca do Socket.IO e o nosso script do cliente -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
 
