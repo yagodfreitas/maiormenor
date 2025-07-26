@@ -1,1 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+input[type="text"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #155ab6;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#lista-jogadores {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#lista-jogadores li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    font-weight: 600;
+}
+
+#lista-jogadores li.host::after {
+    content: '⭐ Host';
+    margin-left: 10px;
+    font-size: 0.8em;
+    background-color: #ffc107;
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
 
